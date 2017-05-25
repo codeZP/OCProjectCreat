@@ -1,0 +1,30 @@
+//
+//  ZPProject-PCH.pch
+//  OCProjectCreat
+//
+//  Created by yueru on 2017/5/10.
+//  Copyright © 2017年 赵攀. All rights reserved.
+//
+
+#ifndef ZPProject_PCH_pch
+#define ZPProject_PCH_pch
+
+// 通知中心
+#define XMGNoteCenter [NSNotificationCenter defaultCenter]
+
+// 取消发布时候的打印的宏
+#ifdef DEBUG
+#define ZPLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZPLog(...)
+#endif
+
+// 屏幕高度
+#define ZPScreenW [UIScreen mainScreen].bounds.size.width
+#define ZPScreenH [UIScreen mainScreen].bounds.size.height
+
+// 头文件
+#import "UIBarButtonItem+Extension.h"
+#import "UIView+Extension.h"
+
+#endif
